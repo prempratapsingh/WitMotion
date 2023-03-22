@@ -15,6 +15,9 @@
 		C154B46F29CAE1600010AE56 /* WitMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B46E29CAE1600010AE56 /* WitMotionTests.swift */; };
 		C154B47929CAE1600010AE56 /* WitMotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B47829CAE1600010AE56 /* WitMotionUITests.swift */; };
 		C154B47B29CAE1600010AE56 /* WitMotionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B47A29CAE1600010AE56 /* WitMotionUITestsLaunchTests.swift */; };
+		C154B4BB29CB1CE60010AE56 /* WTBLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */; };
+		C154B51229CB47C90010AE56 /* WTBLESDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C154B4CE29CB25290010AE56 /* WTBLESDK.framework */; };
+		C154B51329CB47CA0010AE56 /* WTBLESDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C154B4CE29CB25290010AE56 /* WTBLESDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,35 @@
 			remoteGlobalIDString = C154B45329CAE15F0010AE56;
 			remoteInfo = WitMotion;
 		};
+		C154B51A29CB47E50010AE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C154B4E329CB41F70010AE56;
+			remoteInfo = WTBLESDK;
+		};
+		C154B51C29CB47E50010AE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C154B4EB29CB41F70010AE56;
+			remoteInfo = WTBLESDKTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C154B51429CB47CA0010AE56 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C154B51329CB47CA0010AE56 /* WTBLESDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C154B45429CAE15F0010AE56 /* WitMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WitMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +78,13 @@
 		C154B47429CAE1600010AE56 /* WitMotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WitMotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C154B47829CAE1600010AE56 /* WitMotionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitMotionUITests.swift; sourceTree = "<group>"; };
 		C154B47A29CAE1600010AE56 /* WitMotionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitMotionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTBLEPeripheral.swift; sourceTree = "<group>"; };
+		C154B4C029CB1EE30010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WTBLESDK-gksrbokfrawubighbuxpautbmbxb/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
+		C154B4CD29CB25220010AE56 /* Debug-iphonesimulator */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Debug-iphonesimulator"; path = "../../../../../Library/Developer/Xcode/DerivedData/WTBLESDK-aizasiopztlwddbbqfmrdmtvgvev/Build/Products/Debug-iphonesimulator"; sourceTree = "<group>"; };
+		C154B4CE29CB25290010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WTBLESDK-aizasiopztlwddbbqfmrdmtvgvev/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
+		C154B4D229CB3FAB0010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WitMotion-foifzwqscnfmojdptgsppdnysatk/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
+		C154B50229CB460E0010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WTBLESDK-ctwttsiqdgkldwhghxewfjsdqxtn/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
+		C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WTBLESDK.xcodeproj; path = ../WTBLESDK/WTBLESDK.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C154B51229CB47C90010AE56 /* WTBLESDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +116,12 @@
 		C154B44B29CAE15F0010AE56 = {
 			isa = PBXGroup;
 			children = (
+				C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */,
 				C154B45629CAE15F0010AE56 /* WitMotion */,
 				C154B46D29CAE1600010AE56 /* WitMotionTests */,
 				C154B47729CAE1600010AE56 /* WitMotionUITests */,
 				C154B45529CAE15F0010AE56 /* Products */,
+				C154B4BD29CB1EE30010AE56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +140,7 @@
 			children = (
 				C154B48729CAFDF60010AE56 /* Application */,
 				C154B48829CAFEE60010AE56 /* Views */,
+				C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */,
 			);
 			path = WitMotion;
 			sourceTree = "<group>";
@@ -164,6 +206,27 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
+		C154B4BD29CB1EE30010AE56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C154B4CE29CB25290010AE56 /* WTBLESDK.framework */,
+				C154B4D229CB3FAB0010AE56 /* WTBLESDK.framework */,
+				C154B50229CB460E0010AE56 /* WTBLESDK.framework */,
+				C154B4CD29CB25220010AE56 /* Debug-iphonesimulator */,
+				C154B4C029CB1EE30010AE56 /* WTBLESDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C154B51629CB47E50010AE56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C154B51B29CB47E50010AE56 /* WTBLESDK.framework */,
+				C154B51D29CB47E50010AE56 /* WTBLESDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +237,7 @@
 				C154B45029CAE15F0010AE56 /* Sources */,
 				C154B45129CAE15F0010AE56 /* Frameworks */,
 				C154B45229CAE15F0010AE56 /* Resources */,
+				C154B51429CB47CA0010AE56 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +318,12 @@
 			mainGroup = C154B44B29CAE15F0010AE56;
 			productRefGroup = C154B45529CAE15F0010AE56 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C154B51629CB47E50010AE56 /* Products */;
+					ProjectRef = C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C154B45329CAE15F0010AE56 /* WitMotion */,
@@ -262,6 +332,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C154B51B29CB47E50010AE56 /* WTBLESDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WTBLESDK.framework;
+			remoteRef = C154B51A29CB47E50010AE56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C154B51D29CB47E50010AE56 /* WTBLESDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WTBLESDKTests.xctest;
+			remoteRef = C154B51C29CB47E50010AE56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C154B45229CAE15F0010AE56 /* Resources */ = {
@@ -296,6 +383,7 @@
 			files = (
 				C154B45C29CAE15F0010AE56 /* MainViewController.swift in Sources */,
 				C154B45829CAE15F0010AE56 /* AppDelegate.swift in Sources */,
+				C154B4BB29CB1CE60010AE56 /* WTBLEPeripheral.swift in Sources */,
 				C154B45A29CAE15F0010AE56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
