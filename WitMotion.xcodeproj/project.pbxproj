@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		C154B45829CAE15F0010AE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B45729CAE15F0010AE56 /* AppDelegate.swift */; };
 		C154B45A29CAE15F0010AE56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B45929CAE15F0010AE56 /* SceneDelegate.swift */; };
-		C154B45C29CAE15F0010AE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B45B29CAE15F0010AE56 /* ViewController.swift */; };
-		C154B45F29CAE15F0010AE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C154B45D29CAE15F0010AE56 /* Main.storyboard */; };
+		C154B45C29CAE15F0010AE56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B45B29CAE15F0010AE56 /* MainViewController.swift */; };
 		C154B46129CAE1600010AE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C154B46029CAE1600010AE56 /* Assets.xcassets */; };
 		C154B46429CAE1600010AE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C154B46229CAE1600010AE56 /* LaunchScreen.storyboard */; };
 		C154B46F29CAE1600010AE56 /* WitMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B46E29CAE1600010AE56 /* WitMotionTests.swift */; };
@@ -39,8 +38,7 @@
 		C154B45429CAE15F0010AE56 /* WitMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WitMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C154B45729CAE15F0010AE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C154B45929CAE15F0010AE56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C154B45B29CAE15F0010AE56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C154B45E29CAE15F0010AE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C154B45B29CAE15F0010AE56 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C154B46029CAE1600010AE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C154B46329CAE1600010AE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C154B46529CAE1600010AE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +97,8 @@
 		C154B45629CAE15F0010AE56 /* WitMotion */ = {
 			isa = PBXGroup;
 			children = (
-				C154B45729CAE15F0010AE56 /* AppDelegate.swift */,
-				C154B45929CAE15F0010AE56 /* SceneDelegate.swift */,
-				C154B45B29CAE15F0010AE56 /* ViewController.swift */,
-				C154B45D29CAE15F0010AE56 /* Main.storyboard */,
-				C154B46029CAE1600010AE56 /* Assets.xcassets */,
-				C154B46229CAE1600010AE56 /* LaunchScreen.storyboard */,
-				C154B46529CAE1600010AE56 /* Info.plist */,
+				C154B48729CAFDF60010AE56 /* Application */,
+				C154B48829CAFEE60010AE56 /* Views */,
 			);
 			path = WitMotion;
 			sourceTree = "<group>";
@@ -125,6 +118,50 @@
 				C154B47A29CAE1600010AE56 /* WitMotionUITestsLaunchTests.swift */,
 			);
 			path = WitMotionUITests;
+			sourceTree = "<group>";
+		};
+		C154B48729CAFDF60010AE56 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C154B45729CAE15F0010AE56 /* AppDelegate.swift */,
+				C154B45929CAE15F0010AE56 /* SceneDelegate.swift */,
+				C154B46529CAE1600010AE56 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C154B48829CAFEE60010AE56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C154B48A29CAFF070010AE56 /* Assets */,
+				C154B48929CAFEF30010AE56 /* LaunchScreen */,
+				C154B48B29CB015C0010AE56 /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C154B48929CAFEF30010AE56 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C154B46229CAE1600010AE56 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		C154B48A29CAFF070010AE56 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C154B46029CAE1600010AE56 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C154B48B29CB015C0010AE56 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				C154B45B29CAE15F0010AE56 /* MainViewController.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +270,6 @@
 			files = (
 				C154B46429CAE1600010AE56 /* LaunchScreen.storyboard in Resources */,
 				C154B46129CAE1600010AE56 /* Assets.xcassets in Resources */,
-				C154B45F29CAE15F0010AE56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C154B45C29CAE15F0010AE56 /* ViewController.swift in Sources */,
+				C154B45C29CAE15F0010AE56 /* MainViewController.swift in Sources */,
 				C154B45829CAE15F0010AE56 /* AppDelegate.swift in Sources */,
 				C154B45A29CAE15F0010AE56 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C154B45D29CAE15F0010AE56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C154B45E29CAE15F0010AE56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C154B46229CAE1600010AE56 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +467,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E7LF2VLC52;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WitMotion/Info.plist;
+				INFOPLIST_FILE = WitMotion/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,10 +494,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E7LF2VLC52;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WitMotion/Info.plist;
+				INFOPLIST_FILE = WitMotion/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
