@@ -16,7 +16,8 @@ class WTBLEPeripheral {
     
     static func peripheral(
         with peripheral: CBPeripheral?,
-        advertisementData: [String: Any]?, RSSI: NSNumber) -> WTBLEPeripheral? {
+        advertisementData: [String: Any]?,
+        RSSI: NSNumber) -> WTBLEPeripheral? {
         guard peripheral != nil else {
             return nil
         }

@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  WitMotion
+
+  Created by Prem Pratap Singh on 23/03/23.
+  
+*/
+"device_scan" = "Device Scan";
+"this_device" = "This Device";
+"this_device_sensor_data" = "Use this device's sensor data";
+"unknown_device" = "Unknown device";
+"acceleration" = "a";
+"angular_velocity" = "w";
+"angle" = "Angle";
+"magnetic" = "h";
+"barometric_pressure" = "P";
+"port" = "Port";
+"quaternion" = "q";
+"stop_scan" = "Stop";
+"scan" = "Scan";
+"about" = "About";
+"functionIntroduction" = "FunctionIntroduction";
+"helpCenter" = "HelpCenter";
+"versionUpdate" = "VersionUpdate";
+"privacyAgreement" = "PrivacyAgreement";
+"device" = "Device";
+"disconnect" = "Disconnect";
+"connect" = "Connect";
+"cancel" = "Cancel";
+"done" = "OK";
+"select_port_mode" = "Please Select Port Mode";
+"select_output_rate" = "Please Select Output Rate";
+"input_ble_device_name" = "Please input new device name";
+"prefix_of_ble_device" = "The name should has prefix of 'WT'";
+"length_of_ble_device" = "Length should less than 10 bytes";
+"change_name_success" = "Successfully modified!";
+"setting" = "Set";
+"record" = "Record";
+"historyRecord" = "HistoryRecord";
+"stop" = "Stop";
+"AccCali" = "Acc Cali";
+"Rate" = "Rate";
+"Restore" = "Restore";
+"MagCali" = "Mag Cali";
+"Save" = "Save";
+"Rename" = "Rename";
+"Delete" = "Delete";
+"AccCaliDiagram" = "AccCaliDiagram";
+"AngularVelocityDiagram" = "AngularVelocity Diagram";
+"AngleDiagram" = "Acceleration Diagram";
+"MagCaliDiagram" = "Magnitude Diagram";
+"FourElementsDiagram" = "Quaternion Diagram";
+
+"CorrectedMagneticFieldOne" = "Start calibrating the magnetic field?";
+"CorrectedMagneticFieldTwo" = "Calibration method:\n 1. Place the sensor horizontally and rotate 360 degrees in the horizontal plane. \n2. Place the sensor vertically and rotate 360 degrees in a horizontal plane. \nCompleted?";
+
+"year" = "Year";
+"month" = "Month";
+"day" = "Day";
+"hour" = "Hour";
+"minute" = "Minute";
+"second" = "Second";

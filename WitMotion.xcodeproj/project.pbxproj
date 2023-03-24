@@ -10,7 +10,6 @@
 		C154B45829CAE15F0010AE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B45729CAE15F0010AE56 /* AppDelegate.swift */; };
 		C154B45A29CAE15F0010AE56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B45929CAE15F0010AE56 /* SceneDelegate.swift */; };
 		C154B45C29CAE15F0010AE56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B45B29CAE15F0010AE56 /* MainViewController.swift */; };
-		C154B46129CAE1600010AE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C154B46029CAE1600010AE56 /* Assets.xcassets */; };
 		C154B46429CAE1600010AE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C154B46229CAE1600010AE56 /* LaunchScreen.storyboard */; };
 		C154B46F29CAE1600010AE56 /* WitMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B46E29CAE1600010AE56 /* WitMotionTests.swift */; };
 		C154B47929CAE1600010AE56 /* WitMotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B47829CAE1600010AE56 /* WitMotionUITests.swift */; };
@@ -18,6 +17,11 @@
 		C154B4BB29CB1CE60010AE56 /* WTBLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */; };
 		C154B51229CB47C90010AE56 /* WTBLESDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C154B4CE29CB25290010AE56 /* WTBLESDK.framework */; };
 		C154B51329CB47CA0010AE56 /* WTBLESDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C154B4CE29CB25290010AE56 /* WTBLESDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C154B51F29CB6DA90010AE56 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B51E29CB6DA90010AE56 /* MainTableViewCell.swift */; };
+		C154B52129CB6F910010AE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C154B52029CB6F910010AE56 /* Assets.xcassets */; };
+		C154B52429CB70C40010AE56 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B52329CB70C40010AE56 /* DetailViewController.swift */; };
+		C154B52729CC67530010AE56 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B52629CC67530010AE56 /* AboutAppViewController.swift */; };
+		C154B52B29CC70690010AE56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C154B52A29CC70690010AE56 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +74,6 @@
 		C154B45729CAE15F0010AE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C154B45929CAE15F0010AE56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C154B45B29CAE15F0010AE56 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		C154B46029CAE1600010AE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C154B46329CAE1600010AE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C154B46529CAE1600010AE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C154B46A29CAE1600010AE56 /* WitMotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WitMotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +88,11 @@
 		C154B4D229CB3FAB0010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WitMotion-foifzwqscnfmojdptgsppdnysatk/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
 		C154B50229CB460E0010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WTBLESDK-ctwttsiqdgkldwhghxewfjsdqxtn/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
 		C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WTBLESDK.xcodeproj; path = ../WTBLESDK/WTBLESDK.xcodeproj; sourceTree = "<group>"; };
+		C154B51E29CB6DA90010AE56 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		C154B52029CB6F910010AE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C154B52329CB70C40010AE56 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C154B52629CC67530010AE56 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		C154B52A29CC70690010AE56 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,7 @@
 			children = (
 				C154B48729CAFDF60010AE56 /* Application */,
 				C154B48829CAFEE60010AE56 /* Views */,
+				C154B52929CC70550010AE56 /* Localization */,
 				C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */,
 			);
 			path = WitMotion;
@@ -175,9 +184,11 @@
 		C154B48829CAFEE60010AE56 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C154B52529CC67450010AE56 /* AboutView */,
 				C154B48A29CAFF070010AE56 /* Assets */,
 				C154B48929CAFEF30010AE56 /* LaunchScreen */,
 				C154B48B29CB015C0010AE56 /* MainView */,
+				C154B52229CB70B20010AE56 /* DetailsView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,7 +204,7 @@
 		C154B48A29CAFF070010AE56 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C154B46029CAE1600010AE56 /* Assets.xcassets */,
+				C154B52029CB6F910010AE56 /* Assets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -202,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				C154B45B29CAE15F0010AE56 /* MainViewController.swift */,
+				C154B51E29CB6DA90010AE56 /* MainTableViewCell.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -225,6 +237,30 @@
 				C154B51D29CB47E50010AE56 /* WTBLESDKTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C154B52229CB70B20010AE56 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				C154B52329CB70C40010AE56 /* DetailViewController.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		C154B52529CC67450010AE56 /* AboutView */ = {
+			isa = PBXGroup;
+			children = (
+				C154B52629CC67530010AE56 /* AboutAppViewController.swift */,
+			);
+			path = AboutView;
+			sourceTree = "<group>";
+		};
+		C154B52929CC70550010AE56 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C154B52A29CC70690010AE56 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,8 +391,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C154B52129CB6F910010AE56 /* Assets.xcassets in Resources */,
+				C154B52B29CC70690010AE56 /* Localizable.strings in Resources */,
 				C154B46429CAE1600010AE56 /* LaunchScreen.storyboard in Resources */,
-				C154B46129CAE1600010AE56 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +418,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C154B52729CC67530010AE56 /* AboutAppViewController.swift in Sources */,
 				C154B45C29CAE15F0010AE56 /* MainViewController.swift in Sources */,
 				C154B45829CAE15F0010AE56 /* AppDelegate.swift in Sources */,
 				C154B4BB29CB1CE60010AE56 /* WTBLEPeripheral.swift in Sources */,
+				C154B52429CB70C40010AE56 /* DetailViewController.swift in Sources */,
 				C154B45A29CAE15F0010AE56 /* SceneDelegate.swift in Sources */,
+				C154B51F29CB6DA90010AE56 /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

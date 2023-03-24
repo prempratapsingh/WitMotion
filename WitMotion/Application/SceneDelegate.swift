@@ -18,14 +18,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        self.window?.backgroundColor = .white
         self.window?.windowScene = windowScene
         self.presentMainViewController()
     }
     
     /// Instantiates MainViewController and set it as the rootViewController
     private func presentMainViewController() {
-        let mainViewController =  MainViewController()
-        self.window?.rootViewController = mainViewController
+        let navigationController = UINavigationController(rootViewController: MainViewController())
+        
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.barTintColor = .black
+        navigationBarAppearance.tintColor = .white
+        navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        let greenAppearance = UINavigationBarAppearance()
+        greenAppearance.backgroundColor = .black.withAlphaComponent(0.4)
+        navigationController.navigationBar.standardAppearance = greenAppearance
+        navigationController.navigationBar.compactAppearance = greenAppearance
+        navigationController.navigationBar.scrollEdgeAppearance = greenAppearance
+        
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
     }
 
