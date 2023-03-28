@@ -10,9 +10,13 @@ import CoreBluetooth
 
 class WTBLEPeripheral {
     
+    // MARK: - Public properties
+    
     var peripheral: CBPeripheral?
     var advertisementData: [String: Any]?
     var RSSI: NSNumber?
+    
+    // MARK: - Public methods
     
     static func peripheral(
         with peripheral: CBPeripheral?,

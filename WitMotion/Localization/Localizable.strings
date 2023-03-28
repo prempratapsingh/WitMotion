@@ -9,13 +9,13 @@
 "this_device" = "This Device";
 "this_device_sensor_data" = "Use this device's sensor data";
 "unknown_device" = "Unknown device";
-"acceleration" = "a";
-"angular_velocity" = "w";
+"acceleration" = "Acceleration";
+"angular_velocity" = "Velocity";
 "angle" = "Angle";
-"magnetic" = "h";
+"magnetic" = "Magnetic";
 "barometric_pressure" = "P";
 "port" = "Port";
-"quaternion" = "q";
+"quaternion" = "Quaternion";
 "stop_scan" = "Stop";
 "scan" = "Scan";
 "about" = "About";

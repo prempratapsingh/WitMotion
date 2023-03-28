@@ -77,7 +77,6 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = NSLocalizedString("device_scan", comment: "")
-
         
         // Set callback for discovered peripherals
         WTBLE.sharedInstance().bleCallback?.blockOnDiscoverPeripherals = { [weak self] central, peripheral, advertisementData, RSSI in
@@ -93,7 +92,6 @@ class MainViewController: UIViewController {
         super.viewWillDisappear(animated)
         title = ""
     }
-    
     
     // MARk: Private methods
     
@@ -121,7 +119,7 @@ class MainViewController: UIViewController {
         self.lastId = userDefault.object(forKey: "device_uuid") as? String
         
         if let id = lastId, !id.isEmpty {
-            let controller = DetailViewController()
+            let controller = DetailViewController(nibName: "DetailViewController", bundle: .main)
             self.navigationController?.pushViewController(controller, animated: false)
             self.lastId = nil
         }
@@ -143,20 +141,20 @@ class MainViewController: UIViewController {
         }
         
         if peripheral.identifier.uuidString == lastId {
-            let controller = DetailViewController()
+            let controller = DetailViewController(nibName: "DetailViewController", bundle: .main)
             controller.peripheral = WTBLEPeripheral.peripheral(with: peripheral, advertisementData: advertisementData, RSSI: RSSI)
             navigationController?.pushViewController(controller, animated: false)
             lastId = nil
         }
     }
 
-    func beginConnectPeripheralWith() {
+    private func beginConnectPeripheralWith() {
         if !self.scanButton.isSelected {
             self.onScanButtonAction()
         }
       
         if self.peripheralList.count + 1 > self.selectIndex {
-            let controller = DetailViewController()
+            let controller = DetailViewController(nibName: "DetailViewController", bundle: .main)
             let userDefault = UserDefaults.standard
             
             if self.selectIndex > 0 {
@@ -207,7 +205,7 @@ class MainViewController: UIViewController {
     }
     
     @objc private func aboutButtonAction() {
-        let aboutViewController = AboutAppViewController()
+        let aboutViewController = AboutAppViewController(nibName: "AboutAppViewController", bundle: .main)
         self.navigationController?.pushViewController(aboutViewController, animated: true)
     }
 }
@@ -221,11 +219,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
-        
-        
         if indexPath.row == 0 {
-            
-            
             cell.display(
                 title: NSLocalizedString("this_device", comment: ""),
                 subTitle: NSLocalizedString("this_device_sensor_data", comment: ""),

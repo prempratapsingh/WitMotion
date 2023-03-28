@@ -15,13 +15,32 @@
 		C154B47929CAE1600010AE56 /* WitMotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B47829CAE1600010AE56 /* WitMotionUITests.swift */; };
 		C154B47B29CAE1600010AE56 /* WitMotionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B47A29CAE1600010AE56 /* WitMotionUITestsLaunchTests.swift */; };
 		C154B4BB29CB1CE60010AE56 /* WTBLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */; };
-		C154B51229CB47C90010AE56 /* WTBLESDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C154B4CE29CB25290010AE56 /* WTBLESDK.framework */; };
-		C154B51329CB47CA0010AE56 /* WTBLESDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C154B4CE29CB25290010AE56 /* WTBLESDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C154B51F29CB6DA90010AE56 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B51E29CB6DA90010AE56 /* MainTableViewCell.swift */; };
 		C154B52129CB6F910010AE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C154B52029CB6F910010AE56 /* Assets.xcassets */; };
 		C154B52429CB70C40010AE56 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B52329CB70C40010AE56 /* DetailViewController.swift */; };
 		C154B52729CC67530010AE56 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B52629CC67530010AE56 /* AboutAppViewController.swift */; };
 		C154B52B29CC70690010AE56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C154B52A29CC70690010AE56 /* Localizable.strings */; };
+		C154B52F29CDD6120010AE56 /* ItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B52E29CDD6120010AE56 /* ItemDataModel.swift */; };
+		C154B53129CDEF880010AE56 /* AccelerationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B53029CDEF880010AE56 /* AccelerationModel.swift */; };
+		C154B53329CDEFD90010AE56 /* AngularVelocityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B53229CDEFD90010AE56 /* AngularVelocityModel.swift */; };
+		C154B53629CDF0DB0010AE56 /* UIView+FKAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B53529CDF0DB0010AE56 /* UIView+FKAutoLayout.swift */; };
+		C154B53829CDF0E90010AE56 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B53729CDF0E90010AE56 /* UIView+Nib.swift */; };
+		C154B53A29CDF2E20010AE56 /* DataFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B53929CDF2E20010AE56 /* DataFileManager.swift */; };
+		C154B53D29CDF3FC0010AE56 /* ToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B53C29CDF3FC0010AE56 /* ToolManager.swift */; };
+		C154B54029CE0C9E0010AE56 /* HeaderItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B53F29CE0C9E0010AE56 /* HeaderItemCell.swift */; };
+		C154B54229CE0D430010AE56 /* HistoryRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B54129CE0D430010AE56 /* HistoryRecordViewController.swift */; };
+		C154B54429CE0D5B0010AE56 /* FunctionPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B54329CE0D5B0010AE56 /* FunctionPopViewController.swift */; };
+		C154B54629CE0D830010AE56 /* FunctionIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B54529CE0D830010AE56 /* FunctionIntroductionViewController.swift */; };
+		C154B54829CE0D980010AE56 /* PrivacyAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154B54729CE0D980010AE56 /* PrivacyAgreementViewController.swift */; };
+		C154B54A29CE0DC80010AE56 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C154B54929CE0DC80010AE56 /* DetailViewController.xib */; };
+		C154B54D29CE0DE80010AE56 /* HistoryRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C154B54C29CE0DE80010AE56 /* HistoryRecordViewController.xib */; };
+		C154B55029CE0E010010AE56 /* FunctionPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C154B54F29CE0E010010AE56 /* FunctionPopViewController.xib */; };
+		C154B55329CE0E240010AE56 /* AboutAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C154B55229CE0E240010AE56 /* AboutAppViewController.xib */; };
+		C154B55829CE0E7D0010AE56 /* FunctionIntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C154B55729CE0E7D0010AE56 /* FunctionIntroductionViewController.xib */; };
+		C154B55A29CE0F4D0010AE56 /* privacyAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = C154B55929CE0F4D0010AE56 /* privacyAgreement.html */; };
+		C16E4BD429D0B6EE00039933 /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E4BD329D0B6EE00039933 /* PrefixHeader.swift */; };
+		C16E4BED29D33C0300039933 /* WTBLESDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; };
+		C16E4BEE29D33C0300039933 /* WTBLESDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +75,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C154B51429CB47CA0010AE56 /* Embed Frameworks */ = {
+		C16E4BEF29D33C0300039933 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C154B51329CB47CA0010AE56 /* WTBLESDK.framework in Embed Frameworks */,
+				C16E4BEE29D33C0300039933 /* WTBLESDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +112,26 @@
 		C154B52329CB70C40010AE56 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C154B52629CC67530010AE56 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		C154B52A29CC70690010AE56 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C154B52E29CDD6120010AE56 /* ItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataModel.swift; sourceTree = "<group>"; };
+		C154B53029CDEF880010AE56 /* AccelerationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationModel.swift; sourceTree = "<group>"; };
+		C154B53229CDEFD90010AE56 /* AngularVelocityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularVelocityModel.swift; sourceTree = "<group>"; };
+		C154B53529CDF0DB0010AE56 /* UIView+FKAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FKAutoLayout.swift"; sourceTree = "<group>"; };
+		C154B53729CDF0E90010AE56 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		C154B53929CDF2E20010AE56 /* DataFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFileManager.swift; sourceTree = "<group>"; };
+		C154B53C29CDF3FC0010AE56 /* ToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolManager.swift; sourceTree = "<group>"; };
+		C154B53F29CE0C9E0010AE56 /* HeaderItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderItemCell.swift; sourceTree = "<group>"; };
+		C154B54129CE0D430010AE56 /* HistoryRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecordViewController.swift; sourceTree = "<group>"; };
+		C154B54329CE0D5B0010AE56 /* FunctionPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionPopViewController.swift; sourceTree = "<group>"; };
+		C154B54529CE0D830010AE56 /* FunctionIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionIntroductionViewController.swift; sourceTree = "<group>"; };
+		C154B54729CE0D980010AE56 /* PrivacyAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyAgreementViewController.swift; sourceTree = "<group>"; };
+		C154B54929CE0DC80010AE56 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C154B54C29CE0DE80010AE56 /* HistoryRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryRecordViewController.xib; sourceTree = "<group>"; };
+		C154B54F29CE0E010010AE56 /* FunctionPopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionPopViewController.xib; sourceTree = "<group>"; };
+		C154B55229CE0E240010AE56 /* AboutAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutAppViewController.xib; sourceTree = "<group>"; };
+		C154B55729CE0E7D0010AE56 /* FunctionIntroductionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionIntroductionViewController.xib; sourceTree = "<group>"; };
+		C154B55929CE0F4D0010AE56 /* privacyAgreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacyAgreement.html; sourceTree = "<group>"; };
+		C16E4BD329D0B6EE00039933 /* PrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
+		C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WTBLESDK.xcframework; path = ../WTBLESDK/build/WTBLESDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C154B51229CB47C90010AE56 /* WTBLESDK.framework in Frameworks */,
+				C16E4BED29D33C0300039933 /* WTBLESDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +187,9 @@
 			children = (
 				C154B48729CAFDF60010AE56 /* Application */,
 				C154B48829CAFEE60010AE56 /* Views */,
+				C154B52D29CDD6060010AE56 /* Model */,
+				C154B55B29CE12DB0010AE56 /* Utilities */,
 				C154B52929CC70550010AE56 /* Localization */,
-				C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */,
 			);
 			path = WitMotion;
 			sourceTree = "<group>";
@@ -176,6 +216,7 @@
 			children = (
 				C154B45729CAE15F0010AE56 /* AppDelegate.swift */,
 				C154B45929CAE15F0010AE56 /* SceneDelegate.swift */,
+				C16E4BD329D0B6EE00039933 /* PrefixHeader.swift */,
 				C154B46529CAE1600010AE56 /* Info.plist */,
 			);
 			path = Application;
@@ -184,11 +225,16 @@
 		C154B48829CAFEE60010AE56 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C154B52529CC67450010AE56 /* AboutView */,
+				C154B53429CDF0C90010AE56 /* CategoryModule */,
 				C154B48A29CAFF070010AE56 /* Assets */,
 				C154B48929CAFEF30010AE56 /* LaunchScreen */,
 				C154B48B29CB015C0010AE56 /* MainView */,
 				C154B52229CB70B20010AE56 /* DetailsView */,
+				C154B52529CC67450010AE56 /* AboutView */,
+				C154B55429CE0E2B0010AE56 /* PrivacyAgreementView */,
+				C154B55129CE0E0A0010AE56 /* FunctionIntroductionView */,
+				C154B54E29CE0DEF0010AE56 /* FunctionPopView */,
+				C154B54B29CE0DD40010AE56 /* HistoryRcordView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				C154B52029CB6F910010AE56 /* Assets.xcassets */,
+				C154B55929CE0F4D0010AE56 /* privacyAgreement.html */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -221,6 +268,7 @@
 		C154B4BD29CB1EE30010AE56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */,
 				C154B4CE29CB25290010AE56 /* WTBLESDK.framework */,
 				C154B4D229CB3FAB0010AE56 /* WTBLESDK.framework */,
 				C154B50229CB460E0010AE56 /* WTBLESDK.framework */,
@@ -243,6 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				C154B52329CB70C40010AE56 /* DetailViewController.swift */,
+				C154B53F29CE0C9E0010AE56 /* HeaderItemCell.swift */,
+				C154B54929CE0DC80010AE56 /* DetailViewController.xib */,
 			);
 			path = DetailsView;
 			sourceTree = "<group>";
@@ -251,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				C154B52629CC67530010AE56 /* AboutAppViewController.swift */,
+				C154B55229CE0E240010AE56 /* AboutAppViewController.xib */,
 			);
 			path = AboutView;
 			sourceTree = "<group>";
@@ -263,6 +314,70 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		C154B52D29CDD6060010AE56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C154B52E29CDD6120010AE56 /* ItemDataModel.swift */,
+				C154B53029CDEF880010AE56 /* AccelerationModel.swift */,
+				C154B53229CDEFD90010AE56 /* AngularVelocityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C154B53429CDF0C90010AE56 /* CategoryModule */ = {
+			isa = PBXGroup;
+			children = (
+				C154B53529CDF0DB0010AE56 /* UIView+FKAutoLayout.swift */,
+				C154B53729CDF0E90010AE56 /* UIView+Nib.swift */,
+			);
+			path = CategoryModule;
+			sourceTree = "<group>";
+		};
+		C154B54B29CE0DD40010AE56 /* HistoryRcordView */ = {
+			isa = PBXGroup;
+			children = (
+				C154B54129CE0D430010AE56 /* HistoryRecordViewController.swift */,
+				C154B54C29CE0DE80010AE56 /* HistoryRecordViewController.xib */,
+			);
+			path = HistoryRcordView;
+			sourceTree = "<group>";
+		};
+		C154B54E29CE0DEF0010AE56 /* FunctionPopView */ = {
+			isa = PBXGroup;
+			children = (
+				C154B54329CE0D5B0010AE56 /* FunctionPopViewController.swift */,
+				C154B54F29CE0E010010AE56 /* FunctionPopViewController.xib */,
+			);
+			path = FunctionPopView;
+			sourceTree = "<group>";
+		};
+		C154B55129CE0E0A0010AE56 /* FunctionIntroductionView */ = {
+			isa = PBXGroup;
+			children = (
+				C154B54529CE0D830010AE56 /* FunctionIntroductionViewController.swift */,
+				C154B55729CE0E7D0010AE56 /* FunctionIntroductionViewController.xib */,
+			);
+			path = FunctionIntroductionView;
+			sourceTree = "<group>";
+		};
+		C154B55429CE0E2B0010AE56 /* PrivacyAgreementView */ = {
+			isa = PBXGroup;
+			children = (
+				C154B54729CE0D980010AE56 /* PrivacyAgreementViewController.swift */,
+			);
+			path = PrivacyAgreementView;
+			sourceTree = "<group>";
+		};
+		C154B55B29CE12DB0010AE56 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C154B4BA29CB1CE60010AE56 /* WTBLEPeripheral.swift */,
+				C154B53929CDF2E20010AE56 /* DataFileManager.swift */,
+				C154B53C29CDF3FC0010AE56 /* ToolManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,7 +388,7 @@
 				C154B45029CAE15F0010AE56 /* Sources */,
 				C154B45129CAE15F0010AE56 /* Frameworks */,
 				C154B45229CAE15F0010AE56 /* Resources */,
-				C154B51429CB47CA0010AE56 /* Embed Frameworks */,
+				C16E4BEF29D33C0300039933 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -391,9 +506,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C154B55A29CE0F4D0010AE56 /* privacyAgreement.html in Resources */,
+				C154B55829CE0E7D0010AE56 /* FunctionIntroductionViewController.xib in Resources */,
 				C154B52129CB6F910010AE56 /* Assets.xcassets in Resources */,
+				C154B54D29CE0DE80010AE56 /* HistoryRecordViewController.xib in Resources */,
+				C154B55029CE0E010010AE56 /* FunctionPopViewController.xib in Resources */,
 				C154B52B29CC70690010AE56 /* Localizable.strings in Resources */,
+				C154B55329CE0E240010AE56 /* AboutAppViewController.xib in Resources */,
 				C154B46429CAE1600010AE56 /* LaunchScreen.storyboard in Resources */,
+				C154B54A29CE0DC80010AE56 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,13 +539,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C154B52F29CDD6120010AE56 /* ItemDataModel.swift in Sources */,
 				C154B52729CC67530010AE56 /* AboutAppViewController.swift in Sources */,
 				C154B45C29CAE15F0010AE56 /* MainViewController.swift in Sources */,
+				C154B54029CE0C9E0010AE56 /* HeaderItemCell.swift in Sources */,
+				C154B54629CE0D830010AE56 /* FunctionIntroductionViewController.swift in Sources */,
+				C16E4BD429D0B6EE00039933 /* PrefixHeader.swift in Sources */,
 				C154B45829CAE15F0010AE56 /* AppDelegate.swift in Sources */,
+				C154B53A29CDF2E20010AE56 /* DataFileManager.swift in Sources */,
 				C154B4BB29CB1CE60010AE56 /* WTBLEPeripheral.swift in Sources */,
+				C154B53129CDEF880010AE56 /* AccelerationModel.swift in Sources */,
+				C154B53D29CDF3FC0010AE56 /* ToolManager.swift in Sources */,
 				C154B52429CB70C40010AE56 /* DetailViewController.swift in Sources */,
+				C154B53629CDF0DB0010AE56 /* UIView+FKAutoLayout.swift in Sources */,
+				C154B53829CDF0E90010AE56 /* UIView+Nib.swift in Sources */,
+				C154B54229CE0D430010AE56 /* HistoryRecordViewController.swift in Sources */,
 				C154B45A29CAE15F0010AE56 /* SceneDelegate.swift in Sources */,
+				C154B54429CE0D5B0010AE56 /* FunctionPopViewController.swift in Sources */,
 				C154B51F29CB6DA90010AE56 /* MainTableViewCell.swift in Sources */,
+				C154B53329CDEFD90010AE56 /* AngularVelocityModel.swift in Sources */,
+				C154B54829CE0D980010AE56 /* PrivacyAgreementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,11 +725,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E7LF2VLC52;
+				DEVELOPMENT_TEAM = SP56HZ86QA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WitMotion/Application/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "visit bluetooth for device data reading and writing";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -607,6 +743,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xparrow.WitMotion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,11 +755,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E7LF2VLC52;
+				DEVELOPMENT_TEAM = SP56HZ86QA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WitMotion/Application/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "visit bluetooth for device data reading and writing";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -634,6 +773,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xparrow.WitMotion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
