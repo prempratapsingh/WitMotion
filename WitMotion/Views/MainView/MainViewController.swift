@@ -79,7 +79,7 @@ class MainViewController: UIViewController {
         self.title = NSLocalizedString("device_scan", comment: "")
         
         // Set callback for discovered peripherals
-        WTBLE.sharedInstance().bleCallback?.blockOnDiscoverPeripherals = { [weak self] central, peripheral, advertisementData, RSSI in
+        WTBLE.sharedInstance.bleCallback?.blockOnDiscoverPeripherals = { [weak self] central, peripheral, advertisementData, RSSI in
             guard let strongSelf = self else { return }
             strongSelf.addPeripheralDevice(with: peripheral, advertisementData: advertisementData, RSSI: RSSI)
         }
@@ -194,12 +194,12 @@ class MainViewController: UIViewController {
         self.scanButton.isSelected = !self.scanButton.isSelected;
         
         if self.scanButton.isSelected {
-            WTBLE.sharedInstance().cancelScan()
+            WTBLE.sharedInstance.cancelScan()
             self.indicatorView.stopAnimating()
         } else {
             self.peripheralList.removeAll()
             self.tableView.reloadData()
-            WTBLE.sharedInstance().startScan()
+            WTBLE.sharedInstance.startScan()
             self.indicatorView.startAnimating()
         }
     }

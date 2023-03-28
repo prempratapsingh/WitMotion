@@ -143,15 +143,15 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             setUpCrossBtn()
             title = peripheral.advertisementData?["kCBAdvDataLocalName"] as? String ?? peripheral.peripheral?.name ?? "Unknown device"
             
-            WTBLE.sharedInstance().bleCallback?.blockOnConnectedPeripheral = { [weak self] central, peripheral in
+            WTBLE.sharedInstance.bleCallback?.blockOnConnectedPeripheral = { [weak self] central, peripheral in
                 self?.tryReceiveData()
             }
             
-            WTBLE.sharedInstance().bleCallback?.blockOnReadRssi = { [weak self] peripheral, RSSI, error in
+            WTBLE.sharedInstance.bleCallback?.blockOnReadRssi = { [weak self] peripheral, RSSI, error in
                 self?.onReadRssi(peripheral: peripheral, rssi: RSSI, error: error)
             }
             
-            WTBLE.sharedInstance().bleCallback?.blockOnReadValueForCharacteristic = { [weak self] peripheral, characteristic, error in
+            WTBLE.sharedInstance.bleCallback?.blockOnReadValueForCharacteristic = { [weak self] peripheral, characteristic, error in
                 self?.onReadValue(peripheral: peripheral, characteristic: characteristic, error: error)
             }
         }
@@ -160,11 +160,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if peripheral == nil {
-            WTBLE.sharedInstance().bleCallback?.blockOnDiscoverPeripherals = { [weak self] central, peripheral, advertisementData, RSSI in
+            WTBLE.sharedInstance.bleCallback?.blockOnDiscoverPeripherals = { [weak self] central, peripheral, advertisementData, RSSI in
                 self?.discoverPeripheralDevice(with: peripheral, advertisementData: advertisementData, RSSI: RSSI)
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                WTBLE.sharedInstance().startScan()
+                WTBLE.sharedInstance.startScan()
             }
             if updateTimer == nil {
                 updateTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateDisplay), userInfo: nil, repeats: true)
@@ -303,7 +303,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         self.peripheral = WTBLEPeripheral.peripheral(with: peripheral, advertisementData: advertisementData, RSSI: RSSI)
         self.title = self.peripheral!.advertisementData?["kCBAdvDataLocalName"] as? String ?? self.peripheral!.peripheral?.name ?? "Unknown device"
-        WTBLE.sharedInstance().cancelScan()
+        WTBLE.sharedInstance.cancelScan()
         connect()
     }
 
@@ -316,7 +316,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         self.peripheral = WTBLEPeripheral.peripheral(with: peripheral, advertisementData: advertisementData, RSSI: rssi)
         self.title = self.peripheral!.advertisementData?["kCBAdvDataLocalName"] as? String ?? self.peripheral!.peripheral?.name ?? "Unknown device"
         
-        WTBLE.sharedInstance().cancelScan()
+        WTBLE.sharedInstance.cancelScan()
         connect()
     }
 
@@ -339,12 +339,12 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     private func connect() {
         guard let peripheral = self.peripheral, let cbPeripheral = peripheral.peripheral else { return }
-        WTBLE.sharedInstance().tryConnectPeripheral(cbPeripheral)
+        WTBLE.sharedInstance.tryConnectPeripheral(cbPeripheral)
     }
 
     private func cancelConnect() {
         if self.peripheral?.peripheral != nil {
-            WTBLE.sharedInstance().cancelConnection()
+            WTBLE.sharedInstance.cancelConnection()
         }
         refreshTimer?.invalidate()
         refreshTimer = nil
@@ -353,7 +353,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
 
     private func tryReceiveData() {
-        WTBLE.sharedInstance().tryReceiveDataAfterConnected()
+        WTBLE.sharedInstance.tryReceiveDataAfterConnected()
         if refreshTimer == nil {
             refreshTimer = Timer.scheduledTimer(
                 timeInterval: 0.2,
@@ -371,7 +371,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
 
     @objc func onRefreshTimerTick(_ timer: Timer) {
-        if (WTBLE.sharedInstance().getDeviceType().rawValue == 0) {
+        if (WTBLE.sharedInstance.getDeviceType().rawValue == 0) {
             switch fetchIndex {
             case 1:
                 readReg(byteCmd: byteVersionOutCmd)
@@ -390,7 +390,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         if (fetchIndex > 10) {
             fetchIndex = 0
-            WTBLE.sharedInstance().readRssi()
+            WTBLE.sharedInstance.readRssi()
         }
         fetchIndex += 1
     }
@@ -787,18 +787,18 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
 
     private func writeReg(byteCmd: [UInt8]) {
-        if WTBLE.sharedInstance().getDeviceType().rawValue == 0 {
-            WTBLE.sharedInstance().writeData(Data(byteCmd))
+        if WTBLE.sharedInstance.getDeviceType().rawValue == 0 {
+            WTBLE.sharedInstance.writeData(Data(byteCmd))
         } else {
-            WTBLE.sharedInstance().writeData(Data(byteUnlockCmd))
+            WTBLE.sharedInstance.writeData(Data(byteUnlockCmd))
             DispatchQueue.main.asyncAfter(deadline: .now() + 100 * Double(NSEC_PER_MSEC) / Double(NSEC_PER_SEC), execute: {
-                WTBLE.sharedInstance().writeData(Data(byteCmd))
+                WTBLE.sharedInstance.writeData(Data(byteCmd))
             })
         }
     }
 
     private func readReg(byteCmd: [UInt8]) {
-        WTBLE.sharedInstance().writeData(Data(byteCmd))
+        WTBLE.sharedInstance.writeData(Data(byteCmd))
     }
 
     // MARK: UICollectionViewDelegate methods
@@ -862,7 +862,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
 
     private func showRenameAlert() {
-        if WTBLE.sharedInstance().getDeviceType().rawValue == 1 {
+        if WTBLE.sharedInstance.getDeviceType().rawValue == 1 {
             showToast("This type of device name can not be changed!")
             return
         }
@@ -908,7 +908,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         
         let commandStr = "WT\(name)\r\n"
-        WTBLE.sharedInstance().writeData(commandStr.data(using: .utf8)!)
+        WTBLE.sharedInstance.writeData(commandStr.data(using: .utf8)!)
     }
 
     @objc func alertTextFieldDidChange(_ notification: Notification) {
@@ -954,7 +954,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         
         let commandStr = "WT\(name)\r\n"
-        WTBLE.sharedInstance().writeData(commandStr.data(using: .utf8)!)
+        WTBLE.sharedInstance.writeData(commandStr.data(using: .utf8)!)
     }
 
     private func deal(withUpdateBLENameInfo error: Error?) {
@@ -1000,7 +1000,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     private func onReadValue(peripheral: CBPeripheral, characteristic: CBCharacteristic, error: Error?) {
         guard let value = characteristic.value else { return }
-        if WTBLE.sharedInstance().getDeviceType().rawValue == 0 {
+        if WTBLE.sharedInstance.getDeviceType().rawValue == 0 {
             dealWithReadCharacteristicValue(value)
         } else {
             dealWithReadHC06CharacteristicValue(value)

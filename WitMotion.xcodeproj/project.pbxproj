@@ -39,8 +39,8 @@
 		C154B55829CE0E7D0010AE56 /* FunctionIntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C154B55729CE0E7D0010AE56 /* FunctionIntroductionViewController.xib */; };
 		C154B55A29CE0F4D0010AE56 /* privacyAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = C154B55929CE0F4D0010AE56 /* privacyAgreement.html */; };
 		C16E4BD429D0B6EE00039933 /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E4BD329D0B6EE00039933 /* PrefixHeader.swift */; };
-		C16E4BED29D33C0300039933 /* WTBLESDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; };
-		C16E4BEE29D33C0300039933 /* WTBLESDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C16E4BF229D3521400039933 /* WTBLESDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; };
+		C16E4BF329D3521400039933 /* WTBLESDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,16 +58,16 @@
 			remoteGlobalIDString = C154B45329CAE15F0010AE56;
 			remoteInfo = WitMotion;
 		};
-		C154B51A29CB47E50010AE56 /* PBXContainerItemProxy */ = {
+		C16E4BFA29D3521A00039933 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */;
+			containerPortal = C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C154B4E329CB41F70010AE56;
 			remoteInfo = WTBLESDK;
 		};
-		C154B51C29CB47E50010AE56 /* PBXContainerItemProxy */ = {
+		C16E4BFC29D3521A00039933 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */;
+			containerPortal = C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C154B4EB29CB41F70010AE56;
 			remoteInfo = WTBLESDKTests;
@@ -75,13 +75,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C16E4BEF29D33C0300039933 /* Embed Frameworks */ = {
+		C16E4BF429D3521400039933 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C16E4BEE29D33C0300039933 /* WTBLESDK.xcframework in Embed Frameworks */,
+				C16E4BF329D3521400039933 /* WTBLESDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,7 +106,6 @@
 		C154B4CE29CB25290010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WTBLESDK-aizasiopztlwddbbqfmrdmtvgvev/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
 		C154B4D229CB3FAB0010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WitMotion-foifzwqscnfmojdptgsppdnysatk/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
 		C154B50229CB460E0010AE56 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WTBLESDK-ctwttsiqdgkldwhghxewfjsdqxtn/Build/Products/Debug-iphonesimulator/WTBLESDK.framework"; sourceTree = "<group>"; };
-		C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WTBLESDK.xcodeproj; path = ../WTBLESDK/WTBLESDK.xcodeproj; sourceTree = "<group>"; };
 		C154B51E29CB6DA90010AE56 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		C154B52029CB6F910010AE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C154B52329CB70C40010AE56 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +131,7 @@
 		C154B55929CE0F4D0010AE56 /* privacyAgreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacyAgreement.html; sourceTree = "<group>"; };
 		C16E4BD329D0B6EE00039933 /* PrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
 		C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WTBLESDK.xcframework; path = ../WTBLESDK/build/WTBLESDK.xcframework; sourceTree = "<group>"; };
+		C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WTBLESDK.xcodeproj; path = ../WTBLESDK/WTBLESDK.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C16E4BED29D33C0300039933 /* WTBLESDK.xcframework in Frameworks */,
+				C16E4BF229D3521400039933 /* WTBLESDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +163,7 @@
 		C154B44B29CAE15F0010AE56 = {
 			isa = PBXGroup;
 			children = (
-				C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */,
+				C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */,
 				C154B45629CAE15F0010AE56 /* WitMotion */,
 				C154B46D29CAE1600010AE56 /* WitMotionTests */,
 				C154B47729CAE1600010AE56 /* WitMotionUITests */,
@@ -278,15 +278,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C154B51629CB47E50010AE56 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C154B51B29CB47E50010AE56 /* WTBLESDK.framework */,
-				C154B51D29CB47E50010AE56 /* WTBLESDKTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C154B52229CB70B20010AE56 /* DetailsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,6 +369,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		C16E4BF629D3521A00039933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C16E4BFB29D3521A00039933 /* WTBLESDK.framework */,
+				C16E4BFD29D3521A00039933 /* WTBLESDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -388,7 +388,7 @@
 				C154B45029CAE15F0010AE56 /* Sources */,
 				C154B45129CAE15F0010AE56 /* Frameworks */,
 				C154B45229CAE15F0010AE56 /* Resources */,
-				C16E4BEF29D33C0300039933 /* Embed Frameworks */,
+				C16E4BF429D3521400039933 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -471,8 +471,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C154B51629CB47E50010AE56 /* Products */;
-					ProjectRef = C154B51529CB47E50010AE56 /* WTBLESDK.xcodeproj */;
+					ProductGroup = C16E4BF629D3521A00039933 /* Products */;
+					ProjectRef = C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -485,18 +485,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C154B51B29CB47E50010AE56 /* WTBLESDK.framework */ = {
+		C16E4BFB29D3521A00039933 /* WTBLESDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = WTBLESDK.framework;
-			remoteRef = C154B51A29CB47E50010AE56 /* PBXContainerItemProxy */;
+			remoteRef = C16E4BFA29D3521A00039933 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C154B51D29CB47E50010AE56 /* WTBLESDKTests.xctest */ = {
+		C16E4BFD29D3521A00039933 /* WTBLESDKTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = WTBLESDKTests.xctest;
-			remoteRef = C154B51C29CB47E50010AE56 /* PBXContainerItemProxy */;
+			remoteRef = C16E4BFC29D3521A00039933 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
