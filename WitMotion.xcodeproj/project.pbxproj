@@ -39,8 +39,9 @@
 		C154B55829CE0E7D0010AE56 /* FunctionIntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C154B55729CE0E7D0010AE56 /* FunctionIntroductionViewController.xib */; };
 		C154B55A29CE0F4D0010AE56 /* privacyAgreement.html in Resources */ = {isa = PBXBuildFile; fileRef = C154B55929CE0F4D0010AE56 /* privacyAgreement.html */; };
 		C16E4BD429D0B6EE00039933 /* PrefixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E4BD329D0B6EE00039933 /* PrefixHeader.swift */; };
-		C16E4BF229D3521400039933 /* WTBLESDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; };
-		C16E4BF329D3521400039933 /* WTBLESDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C16E4C0829D3760600039933 /* WTBLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E4C0729D3760600039933 /* WTBLE.swift */; };
+		C16E4C0D29D3765E00039933 /* WTBLECallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E4C0B29D3765E00039933 /* WTBLECallback.swift */; };
+		C16E4C0E29D3765E00039933 /* WTBLECentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E4C0C29D3765E00039933 /* WTBLECentralManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,35 +59,7 @@
 			remoteGlobalIDString = C154B45329CAE15F0010AE56;
 			remoteInfo = WitMotion;
 		};
-		C16E4BFA29D3521A00039933 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C154B4E329CB41F70010AE56;
-			remoteInfo = WTBLESDK;
-		};
-		C16E4BFC29D3521A00039933 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C154B4EB29CB41F70010AE56;
-			remoteInfo = WTBLESDKTests;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C16E4BF429D3521400039933 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C16E4BF329D3521400039933 /* WTBLESDK.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C154B45429CAE15F0010AE56 /* WitMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WitMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +104,10 @@
 		C154B55929CE0F4D0010AE56 /* privacyAgreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacyAgreement.html; sourceTree = "<group>"; };
 		C16E4BD329D0B6EE00039933 /* PrefixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHeader.swift; sourceTree = "<group>"; };
 		C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WTBLESDK.xcframework; path = ../WTBLESDK/build/WTBLESDK.xcframework; sourceTree = "<group>"; };
-		C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WTBLESDK.xcodeproj; path = ../WTBLESDK/WTBLESDK.xcodeproj; sourceTree = "<group>"; };
+		C16E4BFE29D3682600039933 /* WTBLESDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTBLESDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/WitMotion-foifzwqscnfmojdptgsppdnysatk/Build/Products/Debug-iphoneos/WTBLESDK.framework"; sourceTree = "<group>"; };
+		C16E4C0729D3760600039933 /* WTBLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBLE.swift; sourceTree = "<group>"; };
+		C16E4C0B29D3765E00039933 /* WTBLECallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBLECallback.swift; sourceTree = "<group>"; };
+		C16E4C0C29D3765E00039933 /* WTBLECentralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBLECentralManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C16E4BF229D3521400039933 /* WTBLESDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +138,6 @@
 		C154B44B29CAE15F0010AE56 = {
 			isa = PBXGroup;
 			children = (
-				C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */,
 				C154B45629CAE15F0010AE56 /* WitMotion */,
 				C154B46D29CAE1600010AE56 /* WitMotionTests */,
 				C154B47729CAE1600010AE56 /* WitMotionUITests */,
@@ -185,6 +159,7 @@
 		C154B45629CAE15F0010AE56 /* WitMotion */ = {
 			isa = PBXGroup;
 			children = (
+				C16E4C0229D374D900039933 /* Core */,
 				C154B48729CAFDF60010AE56 /* Application */,
 				C154B48829CAFEE60010AE56 /* Views */,
 				C154B52D29CDD6060010AE56 /* Model */,
@@ -268,6 +243,7 @@
 		C154B4BD29CB1EE30010AE56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C16E4BFE29D3682600039933 /* WTBLESDK.framework */,
 				C16E4BEC29D33C0300039933 /* WTBLESDK.xcframework */,
 				C154B4CE29CB25290010AE56 /* WTBLESDK.framework */,
 				C154B4D229CB3FAB0010AE56 /* WTBLESDK.framework */,
@@ -369,13 +345,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		C16E4BF629D3521A00039933 /* Products */ = {
+		C16E4C0229D374D900039933 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				C16E4BFB29D3521A00039933 /* WTBLESDK.framework */,
-				C16E4BFD29D3521A00039933 /* WTBLESDKTests.xctest */,
+				C16E4C0729D3760600039933 /* WTBLE.swift */,
+				C16E4C0B29D3765E00039933 /* WTBLECallback.swift */,
+				C16E4C0C29D3765E00039933 /* WTBLECentralManager.swift */,
 			);
-			name = Products;
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,7 +365,6 @@
 				C154B45029CAE15F0010AE56 /* Sources */,
 				C154B45129CAE15F0010AE56 /* Frameworks */,
 				C154B45229CAE15F0010AE56 /* Resources */,
-				C16E4BF429D3521400039933 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -469,12 +445,6 @@
 			mainGroup = C154B44B29CAE15F0010AE56;
 			productRefGroup = C154B45529CAE15F0010AE56 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C16E4BF629D3521A00039933 /* Products */;
-					ProjectRef = C16E4BF529D3521A00039933 /* WTBLESDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C154B45329CAE15F0010AE56 /* WitMotion */,
@@ -483,23 +453,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C16E4BFB29D3521A00039933 /* WTBLESDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = WTBLESDK.framework;
-			remoteRef = C16E4BFA29D3521A00039933 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C16E4BFD29D3521A00039933 /* WTBLESDKTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = WTBLESDKTests.xctest;
-			remoteRef = C16E4BFC29D3521A00039933 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C154B45229CAE15F0010AE56 /* Resources */ = {
@@ -540,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C154B52F29CDD6120010AE56 /* ItemDataModel.swift in Sources */,
+				C16E4C0E29D3765E00039933 /* WTBLECentralManager.swift in Sources */,
 				C154B52729CC67530010AE56 /* AboutAppViewController.swift in Sources */,
 				C154B45C29CAE15F0010AE56 /* MainViewController.swift in Sources */,
 				C154B54029CE0C9E0010AE56 /* HeaderItemCell.swift in Sources */,
@@ -547,6 +501,7 @@
 				C16E4BD429D0B6EE00039933 /* PrefixHeader.swift in Sources */,
 				C154B45829CAE15F0010AE56 /* AppDelegate.swift in Sources */,
 				C154B53A29CDF2E20010AE56 /* DataFileManager.swift in Sources */,
+				C16E4C0829D3760600039933 /* WTBLE.swift in Sources */,
 				C154B4BB29CB1CE60010AE56 /* WTBLEPeripheral.swift in Sources */,
 				C154B53129CDEF880010AE56 /* AccelerationModel.swift in Sources */,
 				C154B53D29CDF3FC0010AE56 /* ToolManager.swift in Sources */,
@@ -559,6 +514,7 @@
 				C154B51F29CB6DA90010AE56 /* MainTableViewCell.swift in Sources */,
 				C154B53329CDEFD90010AE56 /* AngularVelocityModel.swift in Sources */,
 				C154B54829CE0D980010AE56 /* PrivacyAgreementViewController.swift in Sources */,
+				C16E4C0D29D3765E00039933 /* WTBLECallback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +715,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SP56HZ86QA;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WitMotion/Application/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "visit bluetooth for device data reading and writing";

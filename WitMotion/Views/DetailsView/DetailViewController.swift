@@ -8,7 +8,6 @@
 import UIKit
 import CoreMotion
 import CoreBluetooth
-import WTBLESDK
 
 let ToDeg = 180/3.1415926
 func degreesToRadians(_ angle: Double) -> Double {
@@ -302,7 +301,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         
         self.peripheral = WTBLEPeripheral.peripheral(with: peripheral, advertisementData: advertisementData, RSSI: RSSI)
-        self.title = self.peripheral!.advertisementData?["kCBAdvDataLocalName"] as? String ?? self.peripheral!.peripheral?.name ?? "Unknown device"
+        self.title = self.peripheral?.advertisementData?["kCBAdvDataLocalName"] as? String ?? self.peripheral?.peripheral?.name ?? "Unknown device"
         WTBLE.sharedInstance.cancelScan()
         connect()
     }
@@ -314,7 +313,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         
         self.peripheral = WTBLEPeripheral.peripheral(with: peripheral, advertisementData: advertisementData, RSSI: rssi)
-        self.title = self.peripheral!.advertisementData?["kCBAdvDataLocalName"] as? String ?? self.peripheral!.peripheral?.name ?? "Unknown device"
+        self.title = self.peripheral?.advertisementData?["kCBAdvDataLocalName"] as? String ?? self.peripheral?.peripheral?.name ?? "Unknown device"
         
         WTBLE.sharedInstance.cancelScan()
         connect()
@@ -1014,6 +1013,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         } else {
             dataRemain!.append(data)
         }
+        
         let length = dataRemain!.count
         var byte = [UInt8](repeating: 0, count: length)
         dataRemain!.copyBytes(to: &byte, count: length)

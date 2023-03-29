@@ -19,7 +19,7 @@ class MainTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        label.textColor = .white
+        label.textColor = .blue
         return label
     }()
     
@@ -27,7 +27,7 @@ class MainTableViewCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
-        label.textColor = .lightGray
+        label.textColor = .blue
         return label
     }()
     
@@ -35,6 +35,7 @@ class MainTableViewCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "M1")
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -45,6 +46,13 @@ class MainTableViewCell: UITableViewCell {
         stackView.alignment = .leading
         stackView.spacing = 5
         return stackView
+    }()
+    
+    private lazy var bgView: UIView = {
+        let view = UIView(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .yellow
+        return view
     }()
     
     // MARK: Lifecycle methods
@@ -72,20 +80,28 @@ class MainTableViewCell: UITableViewCell {
     private func configureView() {
         self.selectionStyle = .none
         
+        self.addSubview(self.bgView)
+        NSLayoutConstraint.activate([
+            self.bgView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
+            self.bgView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
+            self.bgView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
+            self.bgView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0)
+        ])
+        
         self.addSubview(self.vStackView)
         NSLayoutConstraint.activate([
             self.vStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             self.vStackView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
-            self.vStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10),
+            self.vStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
             self.vStackView.widthAnchor.constraint(equalTo: self.widthAnchor)
         ])
         
         self.addSubview(self.rssiLevelImgView)
         NSLayoutConstraint.activate([
-            self.rssiLevelImgView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            self.rssiLevelImgView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10),
+            self.rssiLevelImgView.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0),
             self.rssiLevelImgView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10),
-            self.rssiLevelImgView.widthAnchor.constraint(equalToConstant: 40)
+            self.rssiLevelImgView.widthAnchor.constraint(equalToConstant: 40),
+            self.rssiLevelImgView.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
 }
